@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Denis Robert Cizma</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#" id="myname"><span><</span><span id="lg-slash">/</span> Denis Robert Cizma <span>></span></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#knowledge">Conocimientos</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="btn-lang">
+                <button><i class="bi bi-globe"></i></button>
+            </div> -->
+            
+        </div>
+    </nav>
+    
+    <!--Wrapper-->
+    <div class="wrapper">
+
+
+
+        <!-- SECTION ABOUT -->
+        <div id="about-me" class="section">
+            <h1>&#128100; Whoami</h1>
+            <div class="short-info">
+                <h2>(Futuro xd)DESARROLLADOR FULL-STACK</h2>
+                <h1>Denis Robert Cizma</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium incidunt dolorum velit culpa quas? Sint aliquam, unde distinctio perspiciatis ipsa suscipit earum cumque doloribus. Est eaque ipsa quam maiores commodi veniam optio perspiciatis ut! Pariatur cum perferendis enim sunt labore laboriosam maiores quos eius eaque expedita eligendi, iste qui blanditiis?</p>
+            </div>
+
+            <img src="https://avatars.githubusercontent.com/u/66885386?v=4" alt="Avatar">
+            <button><a href="assets/index.pdf" download>Descargar CV</a></button>
+
+        </div>
+        <!-------------------->
+
+        <!-- SECTION KNOWLEDGE -->
+        <div id="knowledge" class="section" style="scroll-margin-top: 100px;">
+            <h1>&#128278; Conocimientos</h1>
+            <div class="knowl-items">
+                <div class="item">
+                    <h3><span> &#x2022;</span> Desarrollo Web</h3>
+                    <img src="images/html.png" alt="HTML">
+                    <img src="images/css3.png" alt="CSS3">
+                    <img src="images/js.png" alt="JavaScript">
+                </div>
+                <div class="item">
+                    <h3><span> &#x2022;</span> Scripting</h3>
+                    <img src="images/bash.png" alt="Bash">
+                    <img src="images/python.png" alt="Python">
+                    <img src="images/js.png" alt="JavaScript">
+                </div>
+                <div class="item">
+                    <h3><span> &#x2022;</span> OOP</h3>
+                    <img src="images/C.png" alt="C">
+                </div>
+                <div class="item">
+                    <h3><span> &#x2022;</span> Otros</h3>
+                    <img src="images/wordpress.png" alt="Wordpress">
+                </div>
+
+            </div>
+        </div>
+        <!-------------------->
+
+        <!-- SECTION PROJECTS -->
+        <div id="projects" class="section" style="scroll-margin-top: 100px;">
+            <h1>&#11088; Mejores Proyectos</h1>
+            <div id="cards"></div>
+        </div>
+
+
+        <!---------------------->
+
+        <!-- CONTACT SECTION -->
+        <div id="contact" class="section" style="scroll-margin-top: 100px;">
+            <h1>&#128233; Contacto</h1>
+            <div id="form">
+                <form method="POST" action="https://formspree.io/f/xoqzaeov">      
+                    <input name="name" type="text" class="form-input" placeholder="Nombre" />   
+                    <input name="email" type="email" class="form-input" placeholder="Correo" />
+                    <textarea name="message" class="form-input" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar"/>
+                </form>
+            </div>
+
+        </div>
+        <!-------------------->
+
+    <!----------------->
+    </div>
+    
+    <div id="footer">
+        <a href="https:github.com/N1sek" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:denisrobcizma@gmail.com"><i class="bi bi-envelope-at"></i> denisrobcizma@gmail.com</a>
+    </div>
+    
+    <script src="repos.js" async defer></script>
+</body>
+</html>

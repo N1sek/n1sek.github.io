@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Russo+One&display=swap');
+
+:root{
+    --aqua: #67b0b1;
+    --dark-blue: #202733;
+    --dim-white: #cbcdd3;
+    --gold: #b3ac4e;
+}
+
+::-webkit-scrollbar {display: none;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--dark-blue);
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--dim-white);
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(#2d3644, #202733 );
+    background-attachment: fixed;
+    padding-top: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dim-white);
+    font-weight: 900;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+}
+
+h1{
+    color: var(--aqua);
+}
+
+button {
+    background: none;
+    color: var(--dim-white);
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 26px;
+    cursor: pointer;
+    outline: inherit;
+}
+
+span{
+    color: var(--aqua);
+}
+
+/******* Wrapper and sections ********/
+.wrapper{
+    width: 1292px;
+    margin: 0 auto;
+}
+.section{
+    margin-top: 150px;
+}
+/***********************/
+
+/******* NAV BAR *******/
+.nav-bar{
+    width: 100%;
+    padding-top: 1.5em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--dark-blue);
+    z-index: 1100;
+    border-bottom: var(--aqua) 1px solid;
+}
+
+.nav-content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 50px;
+    min-width: 200px;
+    display: inline-block;
+    margin-right: 300px;
+}
+
+#lg-slash{
+    display: none;
+}
+#myname{
+    font-family: 'Russo One', monospace;
+}
+#myname:hover span{
+    display: inline-block;
+}
+
+.nav-links{
+    height: 50px;
+    display: inline-block;
+    min-width: 750px;
+}
+
+.nav-links li{
+    margin-right: 100px;
+}
+
+.nav-links li:hover{
+    border-bottom: var(--aqua) 1px solid;
+}
+
+
+.btn-lang{
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 5%;
+}
+
+.btn-lang i{
+    font-size: 0.8em;
+}
+/************************/
+
+/*** ABOUT ME SECTION ***/
+#about-me{
+    width: 100%;
+}
+.short-info{
+    text-align: left;
+    width: 50%;
+    float: left;
+    margin-right: 25%;
+}
+.short-info h2{
+    font-size: 0.8em;
+    font-weight: 900;
+    color: var(--aqua);
+    margin: 0;
+}
+
+.short-info h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0;
+    color: var(--dim-white);
+}
+
+.short-info p{
+    font-size: 0.9em;
+    color: var(--dim-white);
+}
+
+#about-me img{
+    border: var(--aqua) 4px solid;
+    padding: 5px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#about-me button{
+    border: var(--aqua) 2px solid;
+    padding: 0.6em;
+    border-radius: 3px;
+    color: var(--aqua);
+    margin-top: 3em;
+    transition: all 0.3s;
+}
+
+#about-me button a{
+    color: var(--aqua);
+}
+
+#about-me button:hover{
+    border: var(--aqua) 2px solid;
+    padding: 0.6em;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--aqua);
+}
+
+#about-me button:hover a{
+    color: var(--dim-white);
+}
+/************************/
+
+/*** KNOWLEDGE SECTION ***/
+.knowl-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.item{
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.item h3{
+    text-align: left;
+}
+
+/*************************/
+
+/**** PROJECTS SECTION ****/
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.repo {
+    width: 300px;
+    height: 300px;
+    padding: 70px 10px;
+    border: 1px solid var(--dim-white);
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin: 20px;
+    background-color: var(--dark-blue);
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.repo:hover{
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(103,176,177,1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(103,176,177,1);
+    box-shadow: 0px 0px 24px 0px rgba(103,176,177,1);
+}
+
+.repo a {
+    color: var(--aqua);
+}
+
+.repo a span{
+    display: none;
+}
+
+.repo a:hover span{
+    display: inline-block;
+}
+
+#p-stars{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #b9b136;
+}
+.repo-stars{
+    color: var(--aqua);
+}
+
+/************************/
+
+/**** CONTACT SECTION ****/
+.form-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid var(--aqua);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:50%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.form-input:focus {
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(103,176,177,1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(103,176,177,1);
+    box-shadow: 0px 0px 24px 0px rgba(103,176,177,1);
+ }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 50%;
+  background: none;
+  border-radius:5px;
+  border: var(--aqua) 2px solid;
+  cursor:pointer;
+  color: var(--aqua);
+  transition: all 0.3s;
+  margin-top:-4px;
+  padding: 1em;
+}
+[type="submit"]:hover{ 
+    border: var(--aqua) 2px solid;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--aqua); 
+}
+
+/*************************/
+
+/**** CONTACT SECTION ****/
+#footer{
+    width: 100%;
+    background-color: var(--dark-blue);
+    position: absolute;
+    height: 5em;
+    margin-top: 100px;
+    border-top: var(--aqua) 1px solid;
+}
+/*************************/
+
+
+/*********** RESPONSIVENESS ************/
+@media screen and (max-width: 1645px) {
+    .nav-links {
+      display: none;
+    }
+    .logo{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1449px){
+    .nav-bar{
+        width: 100%;
+    }
+    .nav-content{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+/***************************************/
