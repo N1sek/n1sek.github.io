@@ -1,6 +1,7 @@
 const username = "n1sek";
 const reposDiv = document.getElementById("cards");
 
+//Fetch my 3 most starred repositories and for each one
 async function getRepos() {
   const response = await fetch(`https://api.github.com/users/${username}/repos`);
   //Get only the 3 most starred repos and place the most starred in the middle between the other two
